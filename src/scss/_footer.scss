@@ -1,0 +1,21 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  &__logo {
+    margin: 0 auto;
+    height: 200px;
+  }
+
+  &__link {
+    margin: 5px 0;
+    font-size: 18px;
+
+    > svg {
+      color: $darkBlue;
+      font-size: 40px;
+      margin: 10px 5px;
+    }
+  }
+}

@@ -13,7 +13,7 @@ const UseClickOutside = handler => {
     document.addEventListener('mousedown', checkHandler)
     
     return () => document.removeEventListener('mousedown', checkHandler)
-  },[])
+  },[handler])
 
   return navRef
 }
@@ -22,15 +22,16 @@ const UseClickOutside = handler => {
 export default function Header() {
   const [toggle, setToggle] = useState(false)
 
+  document.body.style.overflow = toggle ? 'hidden' : 'visible'
 
+  const handleToggle = () => {
+    setToggle(!toggle)
+  }
 
-  
   const navRef = UseClickOutside(() => {
     setToggle(false)
   })
     
-  
-
   return (
     <header className={`header ${toggle ? 'open' : ''}`}>
 
@@ -56,7 +57,7 @@ export default function Header() {
         </nav>
         <div
           className="header__hamburger"
-          onClick={() => setToggle(!toggle)}
+          onClick={handleToggle}
         >
           <div className={`header__hamburger__line`}></div>
         </div>
