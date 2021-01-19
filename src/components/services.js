@@ -9,7 +9,7 @@ export default function Services() {
       </div>
       <div className="services__provide">
         <h1 className="services__title">What we provide</h1>
-        <p className="services__text">We provide each member with a personalized plan taylored to their everyday needs.</p>
+        <p className="services__text">We provide each member with a personalized plan tailored to their everyday needs.</p>
       </div>
 
       {/* Loop this with a Map function after */}

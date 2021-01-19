@@ -6,7 +6,7 @@ export default function About() {
     <section className="about">
       <div>
         <h1 className="about__title">The S&R Philosophy</h1>
-        <button className="button"> out difference</button>
+        <button className="button"> our difference</button>
       </div>
       {aboutData.map(item => (
         <div className="about__info">
