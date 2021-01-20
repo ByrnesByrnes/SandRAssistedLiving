@@ -1,6 +1,92 @@
 .contact__form {
+  position: relative;
   display:flex;
   flex-direction: column;
-  width: 80%;
-  margin: 100px auto 0;
+  height: 340px;
+  min-width: 300px;
+  max-width: 400px;
+  margin: 0 auto;
+
+  &__inputBox {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  &__input,
+  &__textarea {
+    color: #202020;
+    width: inherit;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid $darkBlue;
+    resize: unset;
+    background-color: transparent;
+    
+  }
+
+  &__input:focus + &__label,
+  &__input:valid + &__label,
+  &__textarea:focus + &__label,
+  &__textarea:valid + &__label {
+    color: $skyBlue;
+    transform: translateY(-16px);
+    font-size: 12px;
+  }
+
+  &__textarea {
+    height: 60px;
+    
+    
+  }
+
+  &__label {
+    position: absolute;
+    z-index: -1;
+    top: -2px;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    
+    transition: .5s;
+  }
+
+  button.button {
+    width: 120px;
+    color: $white !important;
+    background-color: $skyBlue;
+    border: none;
+    outline: none;
+    &:hover {
+      background-color: $darkBlue;
+    }
+  }
+
+  &.confirm,
+  &.success {
+    position: absolute;
+    transition: .2s ease-in-out;
+    height: 340px;
+    z-index: 20;
+    background: $white;
+  }
+
+  &.confirm {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  &.success {
+    visibility: visible;
+    display: grid;
+    align-content: center;
+    text-align: center;
+    opacity: 1;
+  }
+
 }

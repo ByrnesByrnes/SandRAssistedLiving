@@ -7,6 +7,7 @@ const encode = data => {
 }
 
 export default function ContactForm() {
+  const [success, setSuccess] = useState('')
   const [state, setState] = useState({
     name: "",
     email: "",
@@ -24,16 +25,24 @@ export default function ContactForm() {
         ...state 
       })
     })
-      .then(() => alert("Success!"))
+      .then(() => {
+        setState({
+          name: "",
+          email: "",
+          message: ""
+        }) 
+        setSuccess("Thank We will respond as Soon as Possible")
+        setTimeout(() => {
+          setSuccess('')
+        }, 4000);
+      })
       .catch(error => alert(error));
-
-    
   }
   
   const handleChange = event => setState({...state,[event.target.name]: event.target.value})
 
   const {name, email, message} = state
-
+  
   return (
     <form 
       className="contact__form" 
@@ -44,30 +53,63 @@ export default function ContactForm() {
       data-netlify-honeypot="bot-field"
     >
     <input type="hidden" name="form-name" value="contact" />
-      <input 
+    <h2 
+      className={`contact__form ${success ? 'success' : 'confirm'}`}
+    >{success}</h2>
+      <h2>Send Message</h2>
+      <div className="contact__form__inputBox">
+      <input
+        className="contact__form__input"
         required 
         type="text" 
         name="name" 
-        placeholder="Your name"
         value={name}
         onChange={handleChange}
       />
+      <span className="contact__form__label">Your name</span>
+      </div>
+      <div className="contact__form__inputBox">
+
       <input 
+        className="contact__form__input"
         required 
         type="email" 
         name="email" 
-        placeholder="Your email"
+        
         value={email}
         onChange={handleChange}
       />
+      <span 
+      className="contact__form__label"
+      style={
+        email.length > 0 ? 
+        {
+          color: "#89abe3",
+          transform: "translateY(-16px)",
+          fontSize: "12px"
+        }
+        : null
+      }
+      >Your Email</span>
+      </div>
+      <div className="contact__form__inputBox">
+
       <textarea 
+        className="contact__form__textarea"
         required 
         name="message" 
-        placeholder="Your message"
+        
         value={message}
         onChange={handleChange}
       ></textarea>
-      <button type="submit">Submit</button>
+      <span className="contact__form__label">Your message</span>
+      </div>
+
+
+
+      
+
+      <button className="button" type="submit">Send</button>
     </form>
   )
 }

@@ -1,13 +1,21 @@
 @import 'variables';
 @import 'globals';
+
 @import 'header';
+@import 'footer';
+// Home Page
 @import 'hero';
-@import 'services';
+@import 'homeServices';
+@import 'homeAbout';
+@import 'homeContact';
+// Pages
+@import 'contactForm';
 @import 'about';
 @import 'contact';
-@import 'footer';
+@import 'services';
 @import 'facility';
-@import 'contactForm';
+
+
 
 // break Points 640px, 1024px, 1400px
 // 639, 1023 1399

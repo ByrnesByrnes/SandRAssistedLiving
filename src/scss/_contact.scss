@@ -1,44 +1,43 @@
 .contact {
-  background-color: $darkBlue;
-  width: 100%;
-  margin: auto;
-  height: fit-content;
-  text-align: center;
-  padding: 20px 0;
+ 
+  margin-top: 100px;
 
-  &__info {
-    width: 80%;
-    margin: auto;
+  &__box {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+
+    > svg {
+      border-radius: 50px;
+      color: $darkBlue;
+      border: 2px solid $skyBlue;
+      padding: 10px;
+      font-size: 45px;
+      margin-right: 20px;
+      transform: scaleX(-1);
+    }
   }
-
-  &__title,
-  &__number {
-    color: $white;
+  &__detail {
+    display: flex;
+    flex-direction: column;
+  }
+  &__subtitle {
     margin: 0;
   }
+}
 
-  &__title {
-    font-size: 50px;
-  }
 
-  &__number {
-   
-  }
+@media(min-width: 800px) {
+  .contact {
+    &__info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
 
-  button.button {
-    text-transform: uppercase;
-    background-color: $white;
-    color: $darkBlue !important;
-    font-size: 15px;
-    padding: 20px 40px;
-    margin: 30px 0;
-    border: none;
-    font-weight: 700;
-    letter-spacing: 3px;
-    
-    :hover {
-      color: $darkBlue;
-      filter: contrast(.8);
+    &__frame {
+      width: 100%;
+
     }
   }
 }
