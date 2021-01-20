@@ -17,14 +17,15 @@ export default function ContactForm() {
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({
+      body: encode({ 
         "form-name": event.target.getAttribute("name"), 
-        ...state
+        ...state 
       })
-    }).then(() => console.log("success"))
-      .catch(error => console.error(error))
-    
-    event.preventDefault()
+    })
+      .then(() => alert("Success!"))
+      .catch(error => alert(error));
+
+    event.preventDefault();
     
   }
   
@@ -33,7 +34,14 @@ export default function ContactForm() {
   const {name, email, message} = state
 
   return (
-    <form data-netlify="true"  className="contact__form" name="contact" method="post" onSubmit={handleSubmit}>
+    <form 
+      className="contact__form" 
+      onSubmit={handleSubmit} 
+      name="contact" 
+      method="post" 
+      data-netlify="true"
+      data-netlify-honeypot="bot-field"
+    >
     <input type="hidden" name="form-name" value="contact" />
       <input 
         required 
