@@ -33,7 +33,7 @@ export default function ContactForm() {
   const {name, email, message} = state
 
   return (
-    <form className="contact__form" name="contact" onSubmit={handleSubmit}>
+    <form data-netlify="true"  className="contact__form" name="contact" method="post" onSubmit={handleSubmit}>
     <input type="hidden" name="form-name" value="contact" />
       <input 
         required 
