@@ -6,6 +6,7 @@ import {
   About,
   Footer,
   Contact,
+  ContactForm
 } from '../components'
 export default function Home() {
   return (
@@ -14,6 +15,8 @@ export default function Home() {
       <Services />
       <About />
       <Contact />
+      
+      <ContactForm />
     </>
   )
 }
