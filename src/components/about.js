@@ -9,7 +9,7 @@ export default function About() {
         <button className="button"> our difference</button>
       </div>
       {aboutData.map(item => (
-        <div className="about__info">
+        <div key={item.id} className="about__info">
           <h4 className="about__subtitle">{item.title}</h4>
           <p className="about__text">{item.text}</p>
         </div>
