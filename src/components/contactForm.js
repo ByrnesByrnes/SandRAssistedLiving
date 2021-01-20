@@ -1,5 +1,10 @@
 import React, { useState } from 'react';
 
+const encode = (data) => {
+  return Object.keys(data)
+    .map(key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`).join("&")
+}
+
 export default function ContactForm() {
   const [state, setState] = useState({
     name: "",
@@ -12,7 +17,7 @@ export default function ContactForm() {
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encodeURI({"form-name": "contact", ...state})
+      body: encode({"form-name": "contact", ...state})
     })
     .then(() => console.log("success"))
     .catch(error => console.error(error))
