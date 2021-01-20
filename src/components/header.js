@@ -1,19 +1,21 @@
 import React, { useState, useRef, useEffect } from 'react';
+import { NavLink as Link } from 'react-router-dom'
+import * as ROUTES from '../constants/routes'
 
 
 const UseClickOutside = handler => {
   let navRef = useRef()
 
-  useEffect(()=> {
+  useEffect(() => {
     const checkHandler = event => {
-      if(!navRef.current.contains(event.target)) {
+      if (!navRef.current.contains(event.target)) {
         handler(false)
       }
     }
     document.addEventListener('mousedown', checkHandler)
-    
+
     return () => document.removeEventListener('mousedown', checkHandler)
-  },[handler])
+  }, [handler])
 
   return navRef
 }
@@ -31,7 +33,7 @@ export default function Header() {
   const navRef = UseClickOutside(() => {
     setToggle(false)
   })
-    
+
   return (
     <header className={`header ${toggle ? 'open' : ''}`}>
 
@@ -45,13 +47,18 @@ export default function Header() {
         <nav className="nav">
           <ul className="nav__list">
             <li className="nav__item">
-              <a href="#" className="nav__links">Home</a>
+              <Link to={ROUTES.HOME} className="nav__links">Services</Link>
             </li>
             <li className="nav__item">
-              <a href="#" className="nav__links">About</a>
+              <Link to={ROUTES.HOME} className="nav__links">About Us</Link>
             </li>
             <li className="nav__item">
-              <a href="#" className="nav__links">Contact</a>
+              <Link 
+                onClick={() => {
+                  setToggle(false)
+                  window.scrollTo(0,0)
+                }}
+                to={ROUTES.FACILITY} className="nav__links">Our Residence</Link>
             </li>
           </ul>
         </nav>

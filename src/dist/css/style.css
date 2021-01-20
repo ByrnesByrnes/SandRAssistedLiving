@@ -24,7 +24,8 @@ body {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
   font-family: 'Gabriela', serif;
   color: #50688f;
 }
@@ -97,6 +98,7 @@ a:hover {
 .header {
   position: fixed;
   width: 100%;
+  top: 0;
 }
 
 .header__navigation {
@@ -429,6 +431,7 @@ a:hover {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
+  margin-bottom: 10px;
 }
 
 .footer__logo {
@@ -445,5 +448,39 @@ a:hover {
   color: #50688f;
   font-size: 40px;
   margin: 10px 5px;
+}
+
+.facility {
+  margin-top: 100px;
+}
+
+.facility__image {
+  width: 100%;
+}
+
+.facility__location {
+  border-top: 2px solid #50688f;
+}
+
+.facility__location__subtitle {
+  margin: 10px 0;
+  padding: 0;
+}
+
+.facility__location__text {
+  margin: 0;
+  padding: 0;
+}
+
+.facility__location__text:last-of-type {
+  margin-bottom: 20px;
+}
+
+.facility__googleMaps {
+  display: block;
+  margin: auto;
+  width: 300px;
+  height: 300px;
+  border: 0;
 }
 /*# sourceMappingURL=style.css.map */

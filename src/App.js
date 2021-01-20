@@ -1,23 +1,30 @@
 import './dist/css/style.css'
+import{BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+import * as ROUTES from './constants/routes'
 import { 
   Header,
-  Hero,
-  Services,
-  About,
   Footer, 
-  Contact,
 } from './components'
+import {
+  Home,
+  Facility
+} from './pages'
 
 function App() {
   return (
-    <div>
+    <Router>
       <Header />
-      <Hero />
-      <Services />
-      <About />
-      <Contact />
+      <Switch>
+        <Route exact path={ROUTES.HOME}>
+          <Home />
+        </Route>
+        <Route path={ROUTES.FACILITY}>
+          <Facility />
+        </Route>
+      </Switch>
       <Footer />
-    </div>
+    </Router>
+
   );
 }
 

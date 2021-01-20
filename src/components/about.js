@@ -14,7 +14,6 @@ export default function About() {
           <p className="about__text">{item.text}</p>
         </div>
       ))}
-
     </section>
   )
 }
