@@ -60,6 +60,14 @@ export default function Header() {
                 }}
                 to={ROUTES.FACILITY} className="nav__links">Our Residence</Link>
             </li>
+            <li className="nav__item">
+              <Link 
+                onClick={() => {
+                  setToggle(false)
+                  window.scrollTo(0,0)
+                }}
+                to={ROUTES.CONTACT} className="nav__links">Contact Us</Link>
+            </li>
           </ul>
         </nav>
         <div

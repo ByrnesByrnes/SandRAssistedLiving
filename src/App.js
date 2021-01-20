@@ -7,7 +7,8 @@ import {
 } from './components'
 import {
   Home,
-  Facility
+  Facility,
+  Contact,
 } from './pages'
 
 function App() {
@@ -20,6 +21,9 @@ function App() {
         </Route>
         <Route path={ROUTES.FACILITY}>
           <Facility />
+        </Route>
+        <Route path={ROUTES.CONTACT}>
+          <Contact />
         </Route>
       </Switch>
       <Footer />
