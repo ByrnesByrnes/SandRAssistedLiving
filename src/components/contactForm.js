@@ -17,10 +17,12 @@ export default function ContactForm() {
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({"form-name": "contact", ...state})
-    })
-    .then(() => console.log("success"))
-    .catch(error => console.error(error))
+      body: encode({
+        "form-name": event.target.getAttribute("name"), 
+        ...state
+      })
+    }).then(() => console.log("success"))
+      .catch(error => console.error(error))
     
     event.preventDefault()
     
@@ -32,6 +34,7 @@ export default function ContactForm() {
 
   return (
     <form className="contact__form" name="contact" onSubmit={handleSubmit}>
+    <input type="hidden" name="form-name" value="contact" />
       <input 
         required 
         type="text" 
