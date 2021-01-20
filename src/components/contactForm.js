@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 
-const encode = (data) => {
+function encode(data) {
   return Object.keys(data)
-    .map(key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`).join("&")
+      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+      .join("&")
 }
 
 export default function ContactForm() {
@@ -13,6 +14,7 @@ export default function ContactForm() {
   })
 
   const handleSubmit = event => {
+    event.preventDefault();
     
     fetch("/", {
       method: "POST",
@@ -25,7 +27,6 @@ export default function ContactForm() {
       .then(() => alert("Success!"))
       .catch(error => alert(error));
 
-    event.preventDefault();
     
   }
   
