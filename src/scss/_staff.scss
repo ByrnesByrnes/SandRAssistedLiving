@@ -1,0 +1,27 @@
+.staff {
+
+  &__title {
+    margin: 0;
+  }
+
+  &__role {
+    margin: 0;
+  }
+
+  &__image {
+    margin: 50px auto;
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  &__info {
+    margin: 20px 0;
+    padding: 20px 0 10px;
+    border-top: 2px solid $darkBlue ;
+  }
+
+  &__text {
+    line-height: 1.5;
+  }
+}

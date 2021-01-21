@@ -10,7 +10,8 @@ import {
   Facility,
   Contact,
   About, 
-  Services
+  Services,
+  Service
 } from './pages'
 
 function App() {
@@ -30,8 +31,11 @@ function App() {
         <Route path={ROUTES.ABOUT}>
           <About />
         </Route>
-        <Route path={ROUTES.SERVICES}>
+        <Route exact path={ROUTES.SERVICES}>
           <Services />
+        </Route>
+        <Route path={`${ROUTES.SERVICES}/:id`}>
+          <Service />
         </Route>
       </Switch>
       <Footer />

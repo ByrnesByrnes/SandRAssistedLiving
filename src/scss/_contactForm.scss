@@ -2,10 +2,11 @@
   position: relative;
   display:flex;
   flex-direction: column;
+  
   height: 340px;
   min-width: 300px;
-  max-width: 400px;
-  margin: 0 auto;
+  max-width: 450px;
+  
 
   &__inputBox {
     position: relative;
@@ -73,6 +74,8 @@
     position: absolute;
     transition: .2s ease-in-out;
     height: 340px;
+    min-width: 300px;
+    max-width: 450px;
     z-index: 20;
     background: $white;
   }
@@ -90,4 +93,14 @@
     opacity: 1;
   }
 
+  @media (min-width: 800px) {
+    width: 50%;
+
+    &.success,
+    &.confirm {
+      width: 100%;
+    }
+    
+  }
 }
+

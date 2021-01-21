@@ -1,6 +1,15 @@
 .contact {
- 
   margin-top: 100px;
+
+  &__content {
+    text-align: center;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
   &__box {
     display: flex;
@@ -26,18 +35,13 @@
   }
 }
 
-
 @media(min-width: 800px) {
   .contact {
     &__info {
       display: flex;
+      flex-direction: row;
       justify-content: space-between;
       align-items: center;
-    }
-
-    &__frame {
-      width: 100%;
-
     }
   }
 }

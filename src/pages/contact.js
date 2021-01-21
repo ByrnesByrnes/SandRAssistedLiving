@@ -38,10 +38,8 @@ export default function Contact() {
             </div>
           </div>
         </div>
-        <div className="contact__frame">
-          <ContactForm />
-        </div>
-
+        <ContactForm />
+       
       </div>
     </section>
   )
