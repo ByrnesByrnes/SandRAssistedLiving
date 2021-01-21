@@ -483,6 +483,10 @@ a:hover {
   border-bottom: 2px solid #50688f;
   resize: unset;
   background-color: transparent;
+  border-radius: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 
 .contact__form__input:focus + .contact__form__label,
@@ -602,6 +606,55 @@ a:hover {
   .contact__frame {
     width: 100%;
   }
+}
+
+.services {
+  margin-top: 100px;
+}
+
+.services__image {
+  width: 100%;
+}
+
+.services .services.button {
+  text-transform: uppercase;
+  margin: 20px 0 40px;
+}
+
+.services__service__image {
+  margin: 20px 0;
+  width: 100%;
+}
+
+.services__service__options {
+  width: 90%;
+  margin: 20px auto;
+}
+
+.services__service__options__option {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  line-height: 1.5;
+  margin: 5px 0;
+  font-size: 18px;
+}
+
+.services__service__options__option:before {
+  content: "\25A0";
+  margin-right: 10px;
+  color: #89abe3;
+}
+
+.services__service__learnMore {
+  text-transform: uppercase;
+  color: #50688f;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  padding: 10px 20px;
 }
 
 .facility {

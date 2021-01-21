@@ -1,3 +1,5 @@
 export { default as Home } from './home'
 export { default as Facility } from './facility'
 export { default as Contact } from './contact'
+export { default as Services } from './services'
+export { default as About } from './about'

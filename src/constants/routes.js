@@ -1,3 +1,5 @@
 export const HOME = '/'
 export const CONTACT = '/contact'
 export const FACILITY = '/facility'
+export const ABOUT = '/about'
+export const SERVICES = '/services'

@@ -9,6 +9,8 @@ import {
   Home,
   Facility,
   Contact,
+  About, 
+  Services
 } from './pages'
 
 function App() {
@@ -24,6 +26,12 @@ function App() {
         </Route>
         <Route path={ROUTES.CONTACT}>
           <Contact />
+        </Route>
+        <Route path={ROUTES.ABOUT}>
+          <About />
+        </Route>
+        <Route path={ROUTES.SERVICES}>
+          <Services />
         </Route>
       </Switch>
       <Footer />

@@ -25,7 +25,8 @@
     border-bottom: 2px solid $darkBlue;
     resize: unset;
     background-color: transparent;
-    
+    border-radius: 0;
+    appearance: none;
   }
 
   &__input:focus + &__label,

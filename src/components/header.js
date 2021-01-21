@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { NavLink as Link } from 'react-router-dom'
 import * as ROUTES from '../constants/routes'
-
+import HeaderLinks, { headerLinks } from '../headerLinks'
 
 const UseClickOutside = handler => {
   let navRef = useRef()
@@ -46,28 +46,15 @@ export default function Header() {
 
         <nav className="nav">
           <ul className="nav__list">
-            <li className="nav__item">
-              <Link to={ROUTES.HOME} className="nav__links">Services</Link>
+          {headerLinks.map(navLink => (
+            <li  
+              key={navLink.id} 
+              className="nav__item"
+              onClick={() => setToggle(false)}
+            >
+              <Link to={navLink.to} className="nav__links">{navLink.title}</Link>
             </li>
-            <li className="nav__item">
-              <Link to={ROUTES.HOME} className="nav__links">About Us</Link>
-            </li>
-            <li className="nav__item">
-              <Link 
-                onClick={() => {
-                  setToggle(false)
-                  window.scrollTo(0,0)
-                }}
-                to={ROUTES.FACILITY} className="nav__links">Our Residence</Link>
-            </li>
-            <li className="nav__item">
-              <Link 
-                onClick={() => {
-                  setToggle(false)
-                  window.scrollTo(0,0)
-                }}
-                to={ROUTES.CONTACT} className="nav__links">Contact Us</Link>
-            </li>
+          ))}
           </ul>
         </nav>
         <div

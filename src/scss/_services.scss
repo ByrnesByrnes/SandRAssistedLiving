@@ -1,0 +1,52 @@
+.services {
+  margin-top: 100px;
+
+  &__image {
+    width: 100%;
+    
+ 
+  }
+
+
+  .services.button {
+    text-transform: uppercase;
+    margin: 20px 0 40px;
+  }
+
+  &__service {
+
+    &__image {
+      margin: 20px 0;
+      width: 100%;
+    }
+
+    &__options {
+      width: 90%;
+      margin: 20px auto;
+
+      &__option {
+        display:flex;
+        align-items: flex-start;
+        line-height: 1.5;
+        margin: 5px 0;
+        font-size: 18px;
+
+        &:before {
+          content: "\25A0";
+          margin-right: 10px;
+          color: $skyBlue;
+        }
+        
+      }
+    }
+
+    &__learnMore {
+      text-transform: uppercase;
+      color: $darkBlue;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+  
+      padding: 10px 20px;
+    }
+  }  
+}
