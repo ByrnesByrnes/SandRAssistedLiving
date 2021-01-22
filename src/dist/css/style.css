@@ -21,6 +21,10 @@ body {
   color: #9698a6;
 }
 
+body.noScroll {
+  overflow: hidden;
+}
+
 h1,
 h2,
 h3,

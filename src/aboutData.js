@@ -28,7 +28,7 @@ export const staffBios = [
   },
   {
     title: "Stacey T.",
-    role: "Administrator/Owner",
+    role: "Owner",
     image: "imgs/staff/staceyt.jpg",
     bio: [
       "I've worked as a nursing assistant for over 5 years at Duncaster Skilled Nursing Facility. My responsibilities entailed but were not limited to are Personal Planned Care, Organized Recreational Activities, Culinary, and Housekeeping.",

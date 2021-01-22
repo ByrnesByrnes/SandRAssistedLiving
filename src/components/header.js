@@ -24,14 +24,20 @@ const UseClickOutside = handler => {
 export default function Header() {
   const [toggle, setToggle] = useState(false)
 
-  document.body.style.overflow = toggle ? 'hidden' : 'visible'
+  const stopScroll = document.body.classList
 
   const handleToggle = () => {
     setToggle(!toggle)
+
+    stopScroll.toggle('noScroll')
+    
+    console.log('fired')
   }
 
   const navRef = UseClickOutside(() => {
     setToggle(false)
+    console.log('outside!')
+    stopScroll.remove('noScroll')
   })
 
   return (
