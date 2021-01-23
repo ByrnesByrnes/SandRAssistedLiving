@@ -54,7 +54,7 @@ export default function Header() {
             <li  
               key={navLink.id} 
               className="nav__item"
-              onClick={() =>{window.scrollTo(0,0); setToggle(false)}}
+              onClick={() =>{window.scrollTo(0,0); setToggle(false); stopScroll.remove('noScroll')}}
             >
               <Link to={navLink.to} className="nav__links">{navLink.title}</Link>
             </li>
