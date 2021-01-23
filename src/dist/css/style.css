@@ -22,7 +22,17 @@ body {
 }
 
 body.noScroll {
+  height: 100vh;
   overflow: hidden;
+}
+
+@media (min-width: 700px) {
+  body.noScroll {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    overflow: unset;
+  }
 }
 
 h1,
@@ -303,6 +313,11 @@ a:hover {
 @media (min-width: 700px) {
   .header__hamburger {
     display: none;
+  }
+  .header.open .overlay {
+    -webkit-transform: scaleY(0) !important;
+            transform: scaleY(0) !important;
+    opacity: 0;
   }
   .nav {
     opacity: 1;

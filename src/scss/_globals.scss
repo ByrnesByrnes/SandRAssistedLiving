@@ -20,7 +20,14 @@ body {
   color: $grey;
 
   &.noScroll {
+    height: 100vh;
     overflow: hidden;
+  }
+  @media (min-width: 700px){
+    &.noScroll {
+      height:fit-content;
+      overflow: unset;
+    }
   }
 }
 h1,
