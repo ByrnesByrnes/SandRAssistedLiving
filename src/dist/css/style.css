@@ -944,9 +944,10 @@ a:hover {
 }
 
 .services__hero__image {
+  margin: 0 auto;
   width: 100%;
-  height: 400px;
-  overflow: hidden;
+  min-width: 300px;
+  max-width: 400px;
 }
 
 .services__content {
@@ -1030,6 +1031,9 @@ a:hover {
   }
   .services__service__image {
     width: 100%;
+  }
+  .services.button {
+    margin: 0 !important;
   }
 }
 
