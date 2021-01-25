@@ -2,9 +2,9 @@ export const services = [
   {
     id: 1,
     title: "Personal Care",
-    img: "/imgs/stock/pexels-andrea-piacquadio.jpg",
+    img: "/imgs/stock/georg-arthur-pflueger.jpg",
     alt: "older ladying looking into a phone",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores necessitatibus temporibus odio perferendis sunt dolorem sequi et velit optio doloremque!",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores necessitatibus temporibus odio!",
     list: [
       "Coordinating and managing your service team and your loved one's service schedule",
       "Arranging exclusive social and wellness events and programs",

@@ -3,7 +3,7 @@ import {
   Hero,
   Services,
   About,
-  Contact,
+  LearnMore,
 } from '../components'
 export default function Home() {
   return (
@@ -11,7 +11,7 @@ export default function Home() {
       <Hero />
       <Services />
       <About />
-      <Contact />
+      <LearnMore />
     </>
   )
 }

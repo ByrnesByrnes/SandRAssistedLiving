@@ -47,26 +47,30 @@ h4 {
 }
 
 h1 {
-  font-size: calc((4 - 1) * 1.2vh + 1rem);
+  font-size: calc((4 - 1) * 1vw + 1rem);
 }
 
 h2 {
-  font-size: calc((4 - 1) * 1.2vh + .5rem);
+  font-size: calc((4 - 1) * 1.2vw + .5rem);
 }
 
 p {
   line-height: 1.4;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 img {
   width: inherit;
   display: block;
 }
+
 section {
-  width: 90%;
+  width: 100%;
+  padding: 0 5%;
   margin: 50px auto;
-  max-width: 1000px;
+  @media(min-width: 800px) {
+    
+  }
 }
 ul {
   margin: 0;
@@ -89,6 +93,9 @@ a:hover {
 
 // Button Styles
 .button {
+  position: relative;
+  z-index: 3;
+  display: block;
   text-transform: capitalize;
   letter-spacing: 1px;
   width: 100%;
@@ -100,7 +107,7 @@ a:hover {
   transition: .2s ease-in-out;
   cursor: pointer;
   text-align: center;
-
+  outline: none;
   &:hover{
     color: $white !important;
     background: $skyBlue;

@@ -1,11 +1,36 @@
 .hero {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-top: 50px;
-  margin: 0 20px;
-  margin-bottom: 50px;
-  height: 100vh;
+  margin: 100px auto 50px;
+  
+  &:before {
+    bottom: -60px;
+    position: absolute;
+    z-index: 1;
+    background-color:$white;
+    content: "";
+    left: 10%;
+    height: 10vw;
+    width: 10vw;
+    transform: rotate(45deg);
+  }
+
+  &__info {
+   
+  }
+
+  &__image {
+    position: relative;
+    z-index: 8;
+    width: 100%;
+    max-width: 500px;
+    max-height: 500px;
+    overflow: hidden;
+    margin: 0 auto;
+    object-fit: cover;
+  }
 
   &__title {
     // consider adding another font
@@ -13,6 +38,43 @@
   }
 
   &__text {
- 
+    margin: 4rem 0;
+
   }
+
+  .button {
+    margin: 50px 0;
+  }
+}
+
+
+
+@media (min-width: 800px) {
+  .hero {
+    flex-direction: row;
+    gap: 0 8rem;
+    align-items: center;
+    height: 70vh;
+    
+
+    &__info {}
+    &__image {
+      margin: auto;
+
+      > img {
+        min-width: 300px;
+        object-position: 0% -7.5rem;
+      }
+  
+    }
+  }
+
+  .button {
+
+    padding: 20px 20px;
+    width: 200px;
+    margin-bottom: 4rem 0;
+  
+  }
+
 }
