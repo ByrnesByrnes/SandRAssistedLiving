@@ -55,6 +55,7 @@
       &::after {top: 6px;}
     }
   }
+
   .overlay {
     position: fixed;
     opacity: 0;
@@ -136,7 +137,9 @@
     font-size: 20px;
     position: relative;
     height: 80px;
-   
+
+ 
+
     &::before {
       content: "";
       opacity: 0;
@@ -147,6 +150,17 @@
       background: $skyBlue;
       background: linear-gradient(90deg, $skyBlue 47%, $darkBlue 88%);
       transition: opacity .4s ease-in-out;
+    }
+
+    &.active {
+      color: $darkBlue;
+
+      &:before { 
+        opacity: 1;
+      }
+     
+      
+    
     }
 
     &:hover {

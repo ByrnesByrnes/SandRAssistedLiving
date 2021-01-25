@@ -10,8 +10,14 @@
   }
 
   &__link {
-    margin: 5px 0;
+    margin: 5px auto;
     font-size: 18px;
+    width: fit-content;
+
+    &:hover {
+      color: $darkBlue;
+      text-decoration: underline;
+    }
 
     > svg {
       color: $darkBlue;
