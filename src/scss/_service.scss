@@ -1,3 +1,21 @@
 .service {
+  
+
   margin-top: 100px;
+
+  &__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+    &__option {
+      display: flex;
+      padding: 10px;
+
+      &:before {
+        content: "\25A0";
+        margin-right: 10px;
+        color: $skyBlue;
+      }
+    }
+  }
 }

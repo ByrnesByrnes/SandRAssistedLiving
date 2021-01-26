@@ -1,7 +1,8 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { NavLink as Link } from 'react-router-dom'
+import { MdKeyboardArrowUp } from 'react-icons/md'
 import * as ROUTES from '../constants/routes'
-import HeaderLinks, { headerLinks } from '../headerLinks'
+import { headerLinks } from '../headerLinks'
 
 const UseClickOutside = handler => {
   let navRef = useRef()
@@ -23,10 +24,19 @@ const UseClickOutside = handler => {
 
 export default function Header() {
   const [toggle, setToggle] = useState(false)
-
+  const [showScroll, setShowScroll] = useState(false)
+  
+  document.addEventListener('scroll', () => {
+    if(window.scrollY > 200) {
+      console.log(window.scrollY)
+      setShowScroll(true)
+    } else {
+      setShowScroll(false)
+    }
+  })
+  console.log(showScroll)
   const stopScroll = document.body.classList
 
-  
   const handleToggle = () => {
     setToggle(!toggle)
     stopScroll.toggle('noScroll')
@@ -40,7 +50,9 @@ export default function Header() {
 
   return (
     <header className={`header ${toggle ? 'open' : ''}`}>
-
+      <div 
+        onClick={() => window.scrollTo(0,0)}
+        style={{visibility: showScroll ? 'visible': 'hidden'}} className="header__scrollTop"><MdKeyboardArrowUp /></div>
       <div className="overlay"></div>
 
       <div className="header__navigation" ref={navRef}>

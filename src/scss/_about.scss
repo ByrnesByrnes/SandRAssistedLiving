@@ -5,30 +5,6 @@
   &__staff {
     color: $grey;
     margin: 50px 0 0;
-    
     font-weight: 400;
-  }
-
-
-  &__text {
-    position: relative;
-    z-index: 20;
-    text-align: center;
-    color: $darkGrey;
-    padding: 50px 0;
-    font-style: italic;
-    
-    &:before {
-      opacity: .1;
-      position: absolute;
-      content: "";
-      background: $skyBlue;
-      z-index: -1;
-      top: 50%;
-      transform: translateY(-50%);
-      left: -10%;
-      height: 100%;
-      width: calc(100% + 15.5%);
-    }
   }
 }

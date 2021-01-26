@@ -23,7 +23,7 @@ export default function Footer() {
       
       <Link onClick={() => window.scrollTo(0,0)} to={ROUTES.SERVICES} className="footer__link">Our Services</Link>
       <Link onClick={() => window.scrollTo(0,0)} to={ROUTES.ABOUT} className="footer__link">About Us</Link>
-      <Link onClick={() => window.scrollTo(0,0)} to={ROUTES.ABOUT} className="footer__link">Our Difference</Link>
+      <Link onClick={() => window.scrollTo(0,0)} to={ROUTES.DIFFERENCE} className="footer__link">Our Difference</Link>
       <Link onClick={() => window.scrollTo(0,0)} to={ROUTES.FACILITY} className="footer__link">Our Facility</Link>
       <Link onClick={() => window.scrollTo(0,0)} to={ROUTES.CONTACT} className="footer__link">Contact Us</Link>
      

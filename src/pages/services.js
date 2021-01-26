@@ -27,10 +27,11 @@ export default function Services() {
               <img src={service.img} alt={service.alt} />
             </div>
             <h2 className="services__service__subtitle">{service.title}</h2>
+            <p className="services__service__text"></p>
             <ul className="services__service__options">
-              {service.list.map(item => (
+              {/* {service.list.slice(0,3).map(item => (
                 <li className="services__service__options__option">{item}</li>
-              ))}
+              ))} */}
             </ul>
             <Link to={`${ROUTES.SERVICES}/${parseToUrl(service.title)}`} className="services__service__learnMore">learn more</Link>
           </div>

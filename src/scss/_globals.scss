@@ -115,3 +115,27 @@ a:hover {
     background: $skyBlue;
   }
 }
+
+.backToTop {
+  position: relative;
+  
+  &:before {
+    content: "\005E";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 10;
+    right: 10px;
+    bottom: 10px;
+    border-radius: 50px;
+    border: 2px solid $skyBlue;
+    height: 30px;
+    width: 30px;
+    transition: .4s ease-in-out;
+    background-color: $white;
+  }
+  > span {
+
+  }
+}

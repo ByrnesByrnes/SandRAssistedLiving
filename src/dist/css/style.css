@@ -121,6 +121,34 @@ a:hover {
   background: #89abe3;
 }
 
+.backToTop {
+  position: relative;
+}
+
+.backToTop:before {
+  content: "\005E";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  z-index: 10;
+  right: 10px;
+  bottom: 10px;
+  border-radius: 50px;
+  border: 2px solid #89abe3;
+  height: 30px;
+  width: 30px;
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+  background-color: #fff;
+}
+
 .header {
   position: fixed;
   z-index: 50;
@@ -474,7 +502,7 @@ a:hover {
   font-size: 50px;
 }
 
-.learnMore button.button {
+.learnMore a.button {
   text-transform: uppercase;
   background-color: #fff;
   color: #50688f !important;
@@ -488,10 +516,33 @@ a:hover {
   max-width: 400px;
 }
 
-.learnMore button.button :hover {
+.learnMore a.button :hover {
   color: #50688f;
   -webkit-filter: contrast(0.8);
           filter: contrast(0.8);
+}
+
+.quote {
+  position: relative;
+  z-index: 20;
+  text-align: center;
+  color: #303030;
+  padding: 50px 0;
+  font-style: italic;
+}
+
+.quote:before {
+  opacity: .1;
+  position: absolute;
+  content: "";
+  background: #89abe3;
+  z-index: -1;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: -10%;
+  height: 100%;
+  width: calc(100% + 15.5%);
 }
 
 .hero {
@@ -609,7 +660,7 @@ a:hover {
 
 .home__services__title__text {
   font-weight: 700;
-  font-size: 1.7rem;
+  font-size: 1.4rem;
 }
 
 .home__services__image {
@@ -619,9 +670,25 @@ a:hover {
 }
 
 .home__services__text {
+  margin-top: 0;
   position: relative;
   z-index: 4;
   font-size: 1.4rem;
+}
+
+.home__services__link {
+  position: relative;
+  z-index: 5;
+  font-size: 1.3rem;
+  color: #50688f !important;
+  font-weight: 700;
+  margin-left: 20px;
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+}
+
+.home__services__link:hover {
+  color: #303030 !important;
 }
 
 @media (min-width: 800px) {
@@ -841,29 +908,6 @@ a:hover {
   font-weight: 400;
 }
 
-.about__text {
-  position: relative;
-  z-index: 20;
-  text-align: center;
-  color: #303030;
-  padding: 50px 0;
-  font-style: italic;
-}
-
-.about__text:before {
-  opacity: .1;
-  position: absolute;
-  content: "";
-  background: #89abe3;
-  z-index: -1;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  left: -10%;
-  height: 100%;
-  width: calc(100% + 15.5%);
-}
-
 .contact {
   margin-top: 100px;
 }
@@ -993,12 +1037,6 @@ a:hover {
   font-size: 18px;
 }
 
-.services__service__options__option:before {
-  content: "\25A0";
-  margin-right: 10px;
-  color: #89abe3;
-}
-
 .services__service__learnMore {
   text-transform: uppercase;
   color: #303030 !important;
@@ -1075,5 +1113,35 @@ a:hover {
 
 .service {
   margin-top: 100px;
+}
+
+.service__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.service__list__option {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+}
+
+.service__list__option:before {
+  content: "\25A0";
+  margin-right: 10px;
+  color: #89abe3;
+}
+
+.difference {
+  margin-top: 100px;
+}
+
+.difference__image {
+  width: 100%;
+  -webkit-box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
 }
 /*# sourceMappingURL=style.css.map */

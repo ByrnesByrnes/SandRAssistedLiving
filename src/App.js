@@ -11,7 +11,8 @@ import {
   Contact,
   About, 
   Services,
-  Service
+  Service,
+  Difference
 } from './pages'
 
 function App() {
@@ -30,6 +31,9 @@ function App() {
         </Route>
         <Route path={ROUTES.ABOUT}>
           <About />
+        </Route>
+        <Route path={ROUTES.DIFFERENCE}>
+          <Difference />
         </Route>
         <Route exact path={ROUTES.SERVICES}>
           <Services />

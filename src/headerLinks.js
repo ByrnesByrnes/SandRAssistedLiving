@@ -18,6 +18,11 @@ export const headerLinks = [
   },
   {
     id: 4,
+    to: ROUTES.DIFFERENCE,
+    title:"Our Difference",
+  },
+  {
+    id: 5,
     to: ROUTES.CONTACT,
     title:"Contact Us",
   },

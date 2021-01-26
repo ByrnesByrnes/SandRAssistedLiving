@@ -2,27 +2,28 @@ export const services = [
   {
     id: 1,
     title: "Personal Care",
-    img: "/imgs/stock/georg-arthur-pflueger.jpg",
-    alt: "older ladying looking into a phone",
-    text: "Feel at home in a comfortable home like environment. We specialize in care and daily living assistance to our clients specialized needs.",
-    list: [
-      "Coordinating and managing your service team and your loved one's service schedule",
-      "Arranging exclusive social and wellness events and programs",
-      "Coordinating transportation to and from appointments"
+    img: "/imgs/stock/hands.jpg",
+    alt: "holding elderly lady hand in her lap",
+    hook: "Feel at home in a comfortable home like environment.",
+    serviceInfo: "Always having a plan in mind",
+    info: [
+      "S & R Assisted Living Facility will have one staff member who will assist residents with their everyday activities.",
+      "We specialize in care and daily living assistance to our clients specialized needs.",
+    ],
+      list: [
+      "Home Health Care",
+      "Hospice Care",
+      "Respite Care",
+      "Home Podiatry",
+      "Medication Monitoring",
+      "Daily Housekeeping",
+      "Emergency Response",
+      "Special Diets",
+      "Feeding Assistance",
+      "Personal Laundry services"
     ]
   },
-  {
-    id: 2,
-    title: "Home Health Welcome",
-    img: "/imgs/stock/pexels-andrea-piacquadio.jpg",
-    alt: "older ladying looking into a phone",
-    text: "Our staff helps assist seniors in maintaining their everyday routines, while also provide engaging social interaction.",
-    list: [
-      "Tidying around the home",
-      "Helping with groceries and preparing meals",
-      "Accompaniment on walks and outings"
-    ]
-  }
+ 
 ]
 
 export const extraServices = [
