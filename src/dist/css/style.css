@@ -619,6 +619,7 @@ a:hover {
 
 .home__services__text {
   position: relative;
+  z-index: 4;
   font-size: 1.4rem;
 }
 

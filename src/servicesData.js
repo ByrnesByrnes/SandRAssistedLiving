@@ -4,7 +4,7 @@ export const services = [
     title: "Personal Care",
     img: "/imgs/stock/georg-arthur-pflueger.jpg",
     alt: "older ladying looking into a phone",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores necessitatibus temporibus odio!",
+    text: "Feel at home in a comfortable home like environment. We specialize in care and daily living assistance to our clients specialized needs.",
     list: [
       "Coordinating and managing your service team and your loved one's service schedule",
       "Arranging exclusive social and wellness events and programs",
@@ -13,10 +13,10 @@ export const services = [
   },
   {
     id: 2,
-    title: "Home Help Team",
+    title: "Home Health Welcome",
     img: "/imgs/stock/pexels-andrea-piacquadio.jpg",
     alt: "older ladying looking into a phone",
-    text: "Our home helpers assist seniors in maintaining their everyday routines and provide engaging social interaction.",
+    text: "Our staff helps assist seniors in maintaining their everyday routines, while also provide engaging social interaction.",
     list: [
       "Tidying around the home",
       "Helping with groceries and preparing meals",
