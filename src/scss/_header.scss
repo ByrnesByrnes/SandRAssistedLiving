@@ -4,6 +4,28 @@
   width: 100%;
   top: 0;
 
+  &__scrollTop {
+    cursor: pointer;
+    visibility: hidden;
+    position: fixed;
+    z-index: inherit;
+    bottom: 15px;
+    right: 15px;
+    height: 40px;
+    width: 40px;
+    
+    > svg {
+      border-radius: 50px;
+      background-color: $white;
+      display: grid;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid $skyBlue;
+      transition: .4s ease-in-out;
+      font-size: 40px;
+    }
+  }
+
   &__navigation {
     position: relative;
     padding: 0 24px;

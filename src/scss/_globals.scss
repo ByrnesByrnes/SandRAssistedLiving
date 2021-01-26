@@ -118,7 +118,7 @@ a:hover {
 
 .backToTop {
   position: relative;
-  
+
   &:before {
     content: "\005E";
     display: flex;
@@ -134,8 +134,5 @@ a:hover {
     width: 30px;
     transition: .4s ease-in-out;
     background-color: $white;
-  }
-  > span {
-
   }
 }
