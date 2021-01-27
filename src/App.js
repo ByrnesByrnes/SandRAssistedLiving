@@ -35,11 +35,11 @@ function App() {
         <Route path={ROUTES.DIFFERENCE}>
           <Difference />
         </Route>
-        <Route exact path={ROUTES.SERVICES}>
-          <Services />
-        </Route>
         <Route path={`${ROUTES.SERVICES}/:id`}>
           <Service />
+        </Route>
+        <Route exact path={ROUTES.SERVICES}>
+          <Services />
         </Route>
       </Switch>
       <Footer />

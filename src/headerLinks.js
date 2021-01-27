@@ -3,7 +3,7 @@ import * as ROUTES from './constants/routes'
 export const headerLinks = [
   {
     id: 1,
-    to: ROUTES.SERVICES,
+    to: ROUTES.SERVICES + '/personal-care',
     title:"Services",
   },
   {

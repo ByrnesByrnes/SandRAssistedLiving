@@ -52,7 +52,7 @@ h1 {
 }
 
 h2 {
-  font-size: calc((4 - 1) * 1.2vw + .5rem);
+  font-size: calc((4 - 1) * 1vw + .5rem);
 }
 
 p {
@@ -72,6 +72,7 @@ section {
   
   @media(min-width: 800px) {
     padding: 0 10%;
+   
   }
 }
 ul {

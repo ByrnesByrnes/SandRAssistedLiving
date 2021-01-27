@@ -6,7 +6,7 @@ export const aboutData = [
   },
   {
     id: 2,
-    title: 'Dedicated partner',
+    title: 'Dedicated staff',
     text: 'Seniors can count on our staff to manage services to meet their needs.'
   },
   {

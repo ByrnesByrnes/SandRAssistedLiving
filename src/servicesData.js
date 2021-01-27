@@ -9,6 +9,7 @@ export const services = [
     info: [
       "S & R Assisted Living Facility will have one staff member who will assist residents with their everyday activities.",
       "We specialize in care and daily living assistance to our clients specialized needs.",
+      "lorem aslkfdj lkaj sdflakjs flk jasfdlkj asfdlk jasfdlkj aslfkj aslkdf jaslkf jalskfj alskfj laskfj laskjf laskjf laskj flaskjf dlaksj flaksjf laksjf lkj lkajs dflkaj sdflkj asdflkj asdflkj asdflkj asfdlkj asflkj asfldkj aslkjas fdalsdkfj alskdf j alskdfj laksj dfl  asdlfjasflkj asflkj asdf"
     ],
       list: [
       "Home Health Care",

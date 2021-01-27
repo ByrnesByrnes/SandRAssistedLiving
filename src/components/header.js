@@ -51,7 +51,7 @@ export default function Header() {
   return (
     <header className={`header ${toggle ? 'open' : ''}`}>
       <div 
-        onClick={() => window.scrollTo(0,0)}
+        onClick={() => window.scroll({top: 0, left: 0, behavior: 'smooth'})}
          className={`header__scrollTop ${showScroll ?  'show' : ''}`}><MdKeyboardArrowUp /></div>
       <div className="overlay"></div>
 

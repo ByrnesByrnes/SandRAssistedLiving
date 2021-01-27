@@ -18,7 +18,9 @@ export default function About() {
         className="home__about__text">
         Everyone's needs are different and we pride ourselves on giving you the care and attention that you deserve.
         </p> */}
-        <Link to={ROUTES.DIFFERENCE} className="button">our difference</Link>
+        <Link 
+          onClick={() => window.scrollTo(0,0)}
+          to={ROUTES.DIFFERENCE} className="button">our difference</Link>
       </div>
       <div className="home__about__content">
 

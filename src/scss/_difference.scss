@@ -4,6 +4,24 @@
   &__image {
     width: 100%;
     box-shadow: $shadow;
+    & > img {
+      height: 100%;
+      object-fit: cover;
+    }
   }
 
+ 
+  @media (min-width: 800px) {
+    &__content {
+      display: flex;
+      gap: 0 50px;
+    }
+    &__info {
+      order: 1;
+    }
+    &__image {
+      order: 2;
+      max-width: 500px;
+    }
+  }
 }

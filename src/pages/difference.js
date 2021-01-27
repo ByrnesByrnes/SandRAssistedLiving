@@ -6,15 +6,25 @@ export default function Difference() {
     <section className="difference">
       <h1 className="difference__title">Our Goal</h1>
       <Quote quote="To make a positive recognizable difference to the lives of senior citizens, through the provision of long-term assisted living." />
+
+
+      <div className="difference__content">
       <div className="difference__image">
-        <img src="/imgs/stock/caregiver.jpg" alt="caregiver holder elderly person's hand"/>
+          <img src="/imgs/stock/caregiver.jpg" alt="caregiver holder elderly person's hand" />
+        </div>
+
+        <div className="difference__info">
+          <p className="difference__text">Your loved ones can rest assured that you will be recieving quality care in a loving and safe environment.</p>
+          <h2 className="difference__subtitle">How?</h2>
+          <ul className="difference__list">
+            <li className="difference__list__option">
+              <p className="difference__text">hello again</p>
+            </li>
+          </ul>
+        </div>
+
+   
       </div>
-      <p className="difference__text">Your loved ones can rest assured that you will be recieving quality care in a loving and safe environment.</p>
-      
-      {/* <h2 className="difference__subtitle">We create Relationships,</h2>
-      <p className="difference__text">not transactions</p> */}
-      <h2 className="difference__subtitle">How?</h2>
-      
     </section>
   )
 }

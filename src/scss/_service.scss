@@ -1,20 +1,68 @@
 .service {
-  
-
   margin-top: 100px;
+  &__info {
+    min-width: 300px;
+    width: 100%;
+  }
+
+
+  &__image {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: $shadow;
+  }
+
+  &__details {
+    position: relative;
+    background-color: $bgSkyBlue;
+    width: 100vw;
+    left: 50%;
+    right: 50%;
+    margin: 30px -50vw;
+    padding: 20px calc(10% + 2vw) ;
+  }
 
   &__list {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
+  padding-bottom: 3rem;
 
     &__option {
       display: flex;
       padding: 10px;
-
+      font-size: 20px;
+      
       &:before {
         content: "\25A0";
         margin-right: 10px;
         color: $skyBlue;
+      }
+    }
+  }
+
+  @media (min-width: 700px) {
+    &__content {
+      display: flex;
+      gap: 0 40px; 
+      align-items: center;
+    }
+
+    &__info {
+      order: 1;
+    }
+    &__image {
+      width: 50%;
+      position: relative;
+      z-index: 5;
+  
+      order: 2;
+    }
+    &__list {
+      grid-template-columns: repeat(2, 1fr);
+
+      &__option { 
+        font-size: calc(.7vw + 1rem);
       }
     }
   }

@@ -12,6 +12,7 @@
   &__text {
     color: $darkGrey;
   }
+  
   @media (min-width: 800px) {
     display: flex;
     align-items: center;
@@ -24,6 +25,5 @@
        flex: .6
       }
     }
-
   }
 }
