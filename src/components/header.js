@@ -26,21 +26,21 @@ export default function Header() {
   const [toggle, setToggle] = useState(false)
   const [showScroll, setShowScroll] = useState(false)
   
-  document.addEventListener('scroll', () => {
-    if(window.scrollY > 200) {
-      console.log(window.scrollY)
-      setShowScroll(true)
-    } else {
-      setShowScroll(false)
+  useEffect(() => {
+    const handleShow = () => {
+      const showing = window.scrollY > 200 && true
+      setShowScroll(showing)
     }
-  })
-  console.log(showScroll)
+    document.addEventListener('scroll', handleShow)
+
+    return () => document.removeEventListener('scroll', handleShow)
+  },[])
+  
   const stopScroll = document.body.classList
 
   const handleToggle = () => {
     setToggle(!toggle)
     stopScroll.toggle('noScroll')
-    
   }
 
   const navRef = UseClickOutside(() => {
@@ -52,7 +52,7 @@ export default function Header() {
     <header className={`header ${toggle ? 'open' : ''}`}>
       <div 
         onClick={() => window.scrollTo(0,0)}
-        style={{visibility: showScroll ? 'visible': 'hidden'}} className="header__scrollTop"><MdKeyboardArrowUp /></div>
+         className={`header__scrollTop ${showScroll ?  'show' : ''}`}><MdKeyboardArrowUp /></div>
       <div className="overlay"></div>
 
       <div className="header__navigation" ref={navRef}>

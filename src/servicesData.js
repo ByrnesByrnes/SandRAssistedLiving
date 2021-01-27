@@ -14,7 +14,7 @@ export const services = [
       "Home Health Care",
       "Hospice Care",
       "Respite Care",
-      "Home Podiatry",
+      "Incontinence management",
       "Medication Monitoring",
       "Daily Housekeeping",
       "Emergency Response",

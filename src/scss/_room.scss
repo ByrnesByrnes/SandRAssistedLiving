@@ -1,0 +1,29 @@
+.room {
+  
+  position: relative;
+  padding: 20px 10%;
+  width: 100vw;
+  left: 50%;
+  right: 50%;
+  margin: 40px -50vw 0;
+ 
+  background-color: $bgSkyBlue;
+
+  &__text {
+    color: $darkGrey;
+  }
+  @media (min-width: 800px) {
+    display: flex;
+    align-items: center;
+    gap: 0 50px;
+
+    &__info {
+      flex: .4;
+
+      & ~ * {
+       flex: .6
+      }
+    }
+
+  }
+}

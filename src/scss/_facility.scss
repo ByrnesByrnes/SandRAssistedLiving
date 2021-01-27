@@ -2,33 +2,7 @@
   margin-top: 100px;
 
   &__image {
-
     width: 100%;
   }
-  &__location {
-    
-    border-top: 2px solid $darkBlue;
 
-    &__subtitle {
-      margin: 10px 0;
-      padding: 0;
-    }
-
-    &__text {
-      margin: 0;
-      padding: 0;
-
-      &:last-of-type {
-        margin-bottom: 20px;
-      }
-    }
-  }
-
-  &__googleMaps {
-    display: block;
-    margin: auto;
-    width: 300px;
-    height: 300px;
-    border: 0;
-  }
 }
