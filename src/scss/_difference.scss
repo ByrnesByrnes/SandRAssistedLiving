@@ -1,6 +1,9 @@
 .difference {
-  margin-top: 100px;
+  margin-top: 50px;
 
+  &__content {
+    margin-top: 50px;
+  }
   &__image {
     width: 100%;
     box-shadow: $shadow;

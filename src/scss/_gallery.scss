@@ -1,0 +1,36 @@
+.gallery {
+  position: relative;
+  
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100%;
+    left: 50%;
+    right: 50%;
+    margin: 0 -50vw;
+    background-color: $bgSkyBlue;
+    z-index: -1;
+  }
+ 
+
+  &__text {
+    color: $darkGrey;
+  }
+  
+  @media (min-width: 800px) {
+    display: flex;
+    align-items: center;
+    gap: 0 50px;
+    justify-content: space-between;
+    
+    &__info {
+      flex: .4;
+      & ~ * {
+       flex: .6
+      }
+    }
+  }
+}

@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Location() {
   return (
-    <div className="location">
+    <section className="location">
     <div className="location__info">
       <h2 className="location__subtitle">Our Location</h2>
       <p className="location__text">907 Woodland Terrace</p>
@@ -18,6 +18,6 @@ export default function Location() {
         allowFullScreen=""
         aria-hidden="false"
         tabIndex="0"></iframe>
-    </div>
+    </section>
   )
 }

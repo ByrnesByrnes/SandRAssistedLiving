@@ -41,4 +41,8 @@
     object-fit: cover;
     transition: .2s;
   }
+  @media (min-width: 800px) {
+    margin: 50px 0;
+  }
 }
+

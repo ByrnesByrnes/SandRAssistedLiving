@@ -1,5 +1,5 @@
 .facility {
-  margin-top: 100px;
+  margin-top: 50px;
 
   &__info {
 
@@ -9,6 +9,7 @@
     width: 100%;
     box-shadow: $shadow;
   }
+  
   @media (min-width: 800px) {
     &__info {
       display: grid;

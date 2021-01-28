@@ -1,5 +1,6 @@
 .service {
-  margin-top: 100px;
+  margin-top: 50px;
+
   &__info {
     min-width: 300px;
     width: 100%;
@@ -15,18 +16,24 @@
 
   &__details {
     position: relative;
-    background-color: $bgSkyBlue;
-    width: 100vw;
-    left: 50%;
-    right: 50%;
-    margin: 30px -50vw;
-    padding: 20px calc(10% + 2vw) ;
+    padding: 40px 0;
+
+    &:before {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 100vw;
+      top: 0;
+      left: 50%;
+      margin: 50px -50vw;
+      background-color: $bgSkyBlue;
+      z-index: -1;
+    }
   }
 
   &__list {
   display: grid;
   grid-template-columns: 1fr;
-  padding-bottom: 3rem;
 
     &__option {
       display: flex;
@@ -55,7 +62,6 @@
       width: 50%;
       position: relative;
       z-index: 5;
-  
       order: 2;
     }
     &__list {

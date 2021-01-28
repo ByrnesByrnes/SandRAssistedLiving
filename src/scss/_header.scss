@@ -9,8 +9,8 @@
     visibility: hidden;
     position: fixed;
     opacity: 0;
-    bottom: 15px;
-    right: 15px;
+    bottom: 45px;
+    right: 30px;
     height: 40px;
     width: 40px;
     transform: rotate(360deg);
@@ -120,7 +120,6 @@
         &::after {
           transform: rotate(-45deg);
         }
-      
     }
     .nav {
       opacity: 1;

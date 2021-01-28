@@ -1,6 +1,5 @@
 .contact {
-  margin-top: 100px;
-
+  max-width: 1000px;
   &__content {
     text-align: center;
   }
@@ -37,8 +36,6 @@
 
 @media(min-width: 800px) {
   .contact {
-    max-width: 1500px;
-
     &__info {
       display: flex;
       flex-direction: row;

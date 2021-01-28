@@ -1,40 +1,13 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { NavLink as Link } from 'react-router-dom'
 import { MdKeyboardArrowUp } from 'react-icons/md'
 import * as ROUTES from '../constants/routes'
 import { headerLinks } from '../headerLinks'
-
-const UseClickOutside = handler => {
-  let navRef = useRef()
-
-  useEffect(() => {
-    const checkHandler = event => {
-      if (!navRef.current.contains(event.target)) {
-        handler(false)
-      }
-    }
-    document.addEventListener('mousedown', checkHandler)
-
-    return () => document.removeEventListener('mousedown', checkHandler)
-  }, [handler])
-
-  return navRef
-}
-
+import { UseClickOutside } from '../hooks/useClickOutside'
+import { BackToTop } from '../hooks/backToTop'
 
 export default function Header() {
   const [toggle, setToggle] = useState(false)
-  const [showScroll, setShowScroll] = useState(false)
-  
-  useEffect(() => {
-    const handleShow = () => {
-      const showing = window.scrollY > 200 && true
-      setShowScroll(showing)
-    }
-    document.addEventListener('scroll', handleShow)
-
-    return () => document.removeEventListener('scroll', handleShow)
-  },[])
   
   const stopScroll = document.body.classList
 
@@ -42,6 +15,9 @@ export default function Header() {
     setToggle(!toggle)
     stopScroll.toggle('noScroll')
   }
+
+  //When scrollY greater then 200 back to scroll Icon appears Bottom Right
+  const  showScroll  = BackToTop()
 
   const navRef = UseClickOutside(() => {
     setToggle(false)

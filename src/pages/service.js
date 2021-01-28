@@ -10,8 +10,9 @@ export default function Service() {
 
 
   return (
+    <>
     <section className="service">
-      <h1 className="service__title">{service.title}</h1>
+      <h1 className="service__title">Services</h1>
       <div className="service__content">
         <img src={service.img} alt={service.alt} className="service__image" />
         <div className="service__info">
@@ -28,10 +29,11 @@ export default function Service() {
           ))}
         </ul>
       </div>
+    </section>
       <p
         style={{ textAlign: "center" }}
         className="service__text"
       >Are we missing something you require? Contact us to inquire so we can best help you.</p>
-    </section>
+    </>
   )
 }

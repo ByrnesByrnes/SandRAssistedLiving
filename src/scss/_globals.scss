@@ -67,12 +67,12 @@ img {
 
 section {
   width: 100%;
-  padding: 0 5%;
+  padding: 20px 5%;
   margin: 50px auto;
+  max-width: 1200px;
   
-  @media(min-width: 800px) {
-    padding: 0 10%;
-   
+  @media(min-width: 1250px) {
+    padding: 40px 0;
   }
 }
 ul {
