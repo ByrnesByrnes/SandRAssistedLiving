@@ -18,6 +18,7 @@ export const aboutData = [
 
 export const staffBios = [
   {
+    id: 1,
     title: "M. Raynebeau R.",
     role: "Administrator/Owner",
     image: "imgs/staff/raynebeaur.jpg",
@@ -27,6 +28,7 @@ export const staffBios = [
     ]
   },
   {
+    id: 2,
     title: "Stacey T.",
     role: "Owner",
     image: "imgs/staff/staceyt.jpg",

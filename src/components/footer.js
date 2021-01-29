@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { AiFillInstagram } from 'react-icons/ai'
+// import { AiFillInstagram } from 'react-icons/ai'
 import { BsEnvelopeFill } from 'react-icons/bs'
 import { NavLink as Link } from 'react-router-dom'
 import { headerLinks } from '../headerLinks'

@@ -10,10 +10,7 @@ export default function About() {
 
       <Quote quote="We strive to provide a safe, home-like environment with excellent quality care to the aging population."/>
       {staffBios.map(staff => (
-        <>
-          <h2 className="about__staff">Meet</h2>
-          <Staff staff={staff}/>
-        </>
+        <Staff key={staff.id} staff={staff}/>
       ))}
     </section>
   )

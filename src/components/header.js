@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { NavLink as Link } from 'react-router-dom'
 import { MdKeyboardArrowUp } from 'react-icons/md'
-import * as ROUTES from '../constants/routes'
+
 import { headerLinks } from '../headerLinks'
 import { UseClickOutside } from '../hooks/useClickOutside'
 import { BackToTop } from '../hooks/backToTop'
