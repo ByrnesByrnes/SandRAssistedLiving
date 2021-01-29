@@ -18,12 +18,12 @@ export const aboutData = [
 
 export const staffBios = [
   {
-    title: "Raynebeau R.",
+    title: "M. Raynebeau R.",
     role: "Administrator/Owner",
     image: "imgs/staff/raynebeaur.jpg",
     bio: [
-      "I've worked with seniors for the over the last decade in various roles.",
-      "Attaining an Associates in Applied Science degree in Occupational Therapy from the Cincinnati State Technical Community College."
+      "Maj Robinson graduated in 2008 from Cincinnati State Technical and Community College with her Associates in Applied Science degree in Occupational Therapy.",
+      "She started her first job as an Occupational Therapist Assistant in 2009 at Belleair Healthcare Centre in Clearwater Flordia where she worked for two (2) years and then decided to branch out to other facilities and home health. Maj has been a therapist for over ten (10) years.",
     ]
   },
   {
@@ -31,8 +31,8 @@ export const staffBios = [
     role: "Owner",
     image: "imgs/staff/staceyt.jpg",
     bio: [
-      "I've worked as a nursing assistant for over 5 years at Duncaster Skilled Nursing Facility. My responsibilities entailed but were not limited to are Personal Planned Care, Organized Recreational Activities, Culinary, and Housekeeping.",
-      "Aquired an Associates of Applied Science degree in Occupational Therapy from Goodwin college."
+      "Stacey-Ann graduated from Goodwin college in 2012 with an Associates of Applied Science degree in Occupational Therapy.",
+      "She worked as a certified nursing assistant for five (5) years in Conneticut at Duncaster skilled nursing facility and assisted living while attending college. While working there, Stacey-Ann provided care to residents, performing activities of daily living for residents and planning recreational activities for resisdents. Stacey-Ann moved to Florida in 2014 to start her career as an Occupational Therapist Assistant at Oak Manor skilled nursing."
     ]
   }
 ]

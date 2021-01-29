@@ -3,7 +3,7 @@
   z-index: 50;
   width: 100%;
   top: 0;
-
+  
   &__scrollTop {
     cursor: pointer;
     visibility: hidden;
@@ -26,9 +26,17 @@
       border: 2px solid $skyBlue;
       transition: .4s ease-in-out;
       font-size: 40px;
+    
+
+      &:hover {
+        background-color: $skyBlue;
+        color: $white;
+        border-color: $darkBlue;
+      }
     }
 
     &.show {
+      
       visibility: visible;
       opacity: 1;
       transform: rotate(0);
@@ -184,13 +192,9 @@
 
     &.active {
       color: $darkBlue;
-
       &:before { 
         opacity: 1;
       }
-     
-      
-    
     }
 
     &:hover {
@@ -203,12 +207,9 @@
   }
 }
 
-
-
-
 @media (min-width: 970px) {
   .header {
-   
+
     &__hamburger {
       display: none;
     }

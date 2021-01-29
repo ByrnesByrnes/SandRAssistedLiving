@@ -16,7 +16,9 @@
 
   &__details {
     position: relative;
-    padding: 40px 0;
+    padding: 10px 0 40px;
+    margin-top: 50px;
+    color: $darkGrey;
 
     &:before {
       content: "";
@@ -25,7 +27,7 @@
       width: 100vw;
       top: 0;
       left: 50%;
-      margin: 50px -50vw;
+      margin: 0 -50vw;
       background-color: $bgSkyBlue;
       z-index: -1;
     }
@@ -48,6 +50,9 @@
     }
   }
 
+  &__extras {
+    margin: 30px 0
+  }
   @media (min-width: 700px) {
     &__content {
       display: flex;
@@ -69,6 +74,14 @@
 
       &__option { 
         font-size: calc(.7vw + 1rem);
+      }
+    }
+    &__extras {
+      display: flex;
+
+      & > div:first-child {
+        padding-right: 50px;
+       
       }
     }
   }

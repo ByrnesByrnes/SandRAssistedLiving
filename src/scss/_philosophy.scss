@@ -1,4 +1,4 @@
-.home__about {
+.philosophy {
   position: relative;
   
   &:before {
@@ -30,7 +30,7 @@
 }
 
 @media (min-width: 800px) {
-  .home__about {
+  .philosophy {
     min-height: 500px;
     position: relative;
     top: 20%;

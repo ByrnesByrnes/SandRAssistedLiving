@@ -17,12 +17,12 @@ export default function Staff({ staff }) {
             <p className="staff__text">{info}</p>
           ))}
         </div>
-        <div className="staff__info">
+        {/* <div className="staff__info">
           <h4 className="staff__subtitle">Something Else here</h4>
           {staff.bio.map(info => (
             <p className="staff__text">{info}</p>
           ))}
-        </div>
+        </div> */}
 
       </div>
     </div>

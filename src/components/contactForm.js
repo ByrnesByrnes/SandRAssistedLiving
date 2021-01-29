@@ -6,7 +6,7 @@ const encode = data => {
       .join("&")
 }
 
-export default function ContactForm() {
+export default function ContactForm({ setShowModal }) {
   const [success, setSuccess] = useState('')
   const [state, setState] = useState({
     name: "",
@@ -32,11 +32,13 @@ export default function ContactForm() {
           message: ""
         }) 
         setSuccess("Thank We will respond as Soon as Possible")
-        setTimeout(() => {
+        const confirmation = setTimeout(() => {
+          setShowModal && setShowModal(false)
           setSuccess('')
         }, 4000);
+        return () => clearTimeout(confirmation)
       })
-      .catch(error => alert(error));
+      .catch(error => setSuccess(error));
   }
   
   const handleChange = event => setState({...state,[event.target.name]: event.target.value})
@@ -93,22 +95,15 @@ export default function ContactForm() {
       >Your Email</span>
       </div>
       <div className="contact__form__inputBox">
-
       <textarea 
         className="contact__form__textarea"
         required 
         name="message" 
-        
         value={message}
         onChange={handleChange}
       ></textarea>
       <span className="contact__form__label">Your message</span>
       </div>
-
-
-
-      
-
       <button className="button" type="submit">Send</button>
     </form>
   )

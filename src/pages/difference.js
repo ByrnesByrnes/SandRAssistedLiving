@@ -18,7 +18,9 @@ export default function Difference() {
           <h2 className="difference__subtitle">How?</h2>
           <ul className="difference__list">
             <li className="difference__list__option">
-              <p className="difference__text">hello again</p>
+              <p className="difference__text">We look at all aspects of care not just from the physical, but also the mental and emotional view.</p>
+              <p className="difference__text">Treating our residents as friends and family can help one cope with the adversities of needing support.</p>
+              
             </li>
           </ul>
         </div>

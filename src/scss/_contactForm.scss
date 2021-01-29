@@ -5,13 +5,15 @@
   
   height: fit-content;
   min-width: 300px;
+  width: 100%;
   max-width: 450px;
-  
+  padding: 0 20px;
 
   &__inputBox {
     position: relative;
     width: 100%;
-    margin-top: 10px;
+    margin: 10px auto 0;
+    
   }
 
   &__input,
@@ -64,6 +66,7 @@
     background-color: $skyBlue;
     border: none;
     outline: none;
+
     &:hover {
       background-color: $darkBlue;
     }
@@ -72,14 +75,15 @@
   &.confirm,
   &.success {
     position: absolute;
-    transition: .2s ease-in-out;
-    height: 340px;
+    height: 100%;
     min-width: 300px;
     max-width: 450px;
     z-index: 20;
     background: $white;
+    left: 0;
+    transition: opacity .2s ease-in-out;
   }
-
+  
   &.confirm {
     visibility: hidden;
     opacity: 0;
@@ -89,13 +93,15 @@
     visibility: visible;
     display: grid;
     align-content: center;
-    text-align: center;
+    
     opacity: 1;
+    margin: 0;
+    font-size: 2rem;
+    
   }
 
   @media (min-width: 800px) {
-    width: 50%;
-
+  
     &.success,
     &.confirm {
       width: 100%;

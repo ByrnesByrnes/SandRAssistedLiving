@@ -1,5 +1,4 @@
 .staff {
-
   &__title {
     margin: 0;
   }
@@ -44,11 +43,10 @@
     &__info {
       width: 50%;
       margin: 0;
-
-      &:last-child {
-        margin: 20px 0;
-        width: 100%;
-      }
+      // &:last-child {
+      //   margin: 20px 0;
+      //   width: 100%;
+      // }
     }
   }
 }

@@ -14,6 +14,7 @@ export default function Header() {
   const handleToggle = () => {
     setToggle(!toggle)
     stopScroll.toggle('noScroll')
+  
   }
 
   //When scrollY greater then 200 back to scroll Icon appears Bottom Right

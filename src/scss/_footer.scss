@@ -18,11 +18,16 @@
       color: $darkBlue;
       text-decoration: underline;
     }
+  }
 
-    > svg {
+  &__social {
+    color: $skyBlue;
+    font-size: 40px;
+    margin: 10px 5px;
+    cursor: pointer;
+    transition: .4s ease-in-out;
+    &:hover {
       color: $darkBlue;
-      font-size: 40px;
-      margin: 10px 5px;
     }
   }
 }

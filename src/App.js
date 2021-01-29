@@ -38,9 +38,9 @@ function App() {
         <Route path={`${ROUTES.SERVICES}/:id`}>
           <Service />
         </Route>
-        <Route exact path={ROUTES.SERVICES}>
+        {/* <Route exact path={ROUTES.SERVICES}>
           <Services />
-        </Route>
+        </Route> */}
       </Switch>
       <Footer />
     </Router>

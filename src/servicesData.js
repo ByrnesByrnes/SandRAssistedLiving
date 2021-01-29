@@ -7,9 +7,9 @@ export const services = [
     hook: "Feel at home in a comfortable home like environment.",
     serviceInfo: "Always having a plan in mind",
     info: [
-      "S & R Assisted Living Facility will have one staff member who will assist residents with their everyday activities.",
-      "We specialize in care and daily living assistance to our clients specialized needs.",
-      "lorem aslkfdj lkaj sdflakjs flk jasfdlkj asfdlk jasfdlkj aslfkj aslkdf jaslkf jalskfj alskfj laskfj laskjf laskjf laskj flaskjf dlaksj flaksjf laksjf lkj lkajs dflkaj sdflkj asdflkj asdflkj asdflkj asfdlkj asflkj asfldkj aslkjas fdalsdkfj alskdf j alskdfj laksj dfl  asdlfjasflkj asflkj asdf"
+      "We specialize in care and daily living assistance to our clients specialized needs. S&R Assisted Living will have one staff member who will assist residents with their everyday activities.",
+      "There will be a minimum of one awake staff member on the day shift according to patients needs (7:00 am to 3:00 pm), one staff member on the evening shift (3:00 pm to 11:00 pm), and one staff member on the night shift (11:00 pm to 7:00 am)."
+    
     ],
       list: [
       "Home Health Care",
