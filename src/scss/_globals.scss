@@ -113,8 +113,8 @@ a:hover {
   letter-spacing: 1px;
   width: 100%;
   font-size: 1.3rem;
-  color: $skyBlue !important;
-  border: solid 2px $skyBlue;
+  color: $darkBlue !important;
+  border: solid 2px $darkBlue;
   background: transparent;
   padding: 10px;
   transition: .2s ease-in-out;
@@ -125,7 +125,7 @@ a:hover {
 
   &:hover{
     color: $white !important;
-    background: $skyBlue;
+    background: $darkBlue;
   }
 }
 
