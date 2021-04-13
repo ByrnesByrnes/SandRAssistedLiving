@@ -52,6 +52,7 @@ export default function Carousel({ slides }) {
           src={slide.img}
           alt={slide.alt}
           style={{
+            width: 'auto',
             transform: `translateX(${current}%)`,
             transition: current === 0 ? 'none' : '.4s ease-in-out'
           }}

@@ -707,11 +707,9 @@ a:hover {
 }
 
 .carousel__slide {
-  width: 100%;
+  max-width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-transition: .2s;
-  transition: .2s;
 }
 
 @media (min-width: 800px) {
