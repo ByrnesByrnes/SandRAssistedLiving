@@ -137,6 +137,15 @@ a:hover {
   background: #50688f;
 }
 
+.button:active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+.button:focus-visible {
+  border: 2px solid black;
+}
+
 .backToTop {
   position: relative;
 }

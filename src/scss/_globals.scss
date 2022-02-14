@@ -118,6 +118,7 @@ a:hover {
   background: transparent;
   padding: 10px;
   transition: .2s ease-in-out;
+
   cursor: pointer;
   text-align: center;
   outline: none;
@@ -126,6 +127,14 @@ a:hover {
   &:hover{
     color: $white !important;
     background: $darkBlue;
+  }
+  
+  &:active {
+    transform: scale(.95);
+  }
+
+  &:focus-visible {
+    border: 2px solid black;
   }
 }
 

@@ -1,8 +1,19 @@
 import React from 'react';
 import { Quote } from '../components'
+import * as ROUTES from "../constants/routes";
+import {Helmet} from "react-helmet-async";
 
 export default function Difference() {
   return (
+    <>
+    <Helmet>
+    <title>S and R Assisted Living: Difference</title>
+    <meta
+      name="description"
+      content="At S and R Assisted Living your loved ones can rest assured that you will be receiving quality care in a loving and safe environment."
+    />
+    <link rel="canonical" href={ROUTES.DIFFERENCE} />
+  </Helmet>
     <section className="difference">
       <h1 className="difference__title">Our Goal</h1>
       <Quote quote="To make a positive recognizable difference to the lives of senior citizens, through the provision of long-term assisted living." />
@@ -14,7 +25,7 @@ export default function Difference() {
         </div>
 
         <div className="difference__info">
-          <p className="difference__text">Your loved ones can rest assured that you will be recieving quality care in a loving and safe environment.</p>
+          <p className="difference__text">Your loved ones can rest assured that you will be receiving quality care in a loving and safe environment.</p>
           <h2 className="difference__subtitle">How?</h2>
           <ul className="difference__list">
             <li className="difference__list__option">
@@ -28,5 +39,6 @@ export default function Difference() {
    
       </div>
     </section>
+    </>
   )
 }

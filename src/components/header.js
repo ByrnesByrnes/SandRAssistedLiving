@@ -34,7 +34,7 @@ export default function Header() {
 
       <div className="header__navigation" ref={navRef}>
         <a href="/" className="header__logo">
-          <img className="header__logo__image" src="/imgs/SandR-logo.png" alt="Logo" />
+          <img className="header__logo__image" src="/imgs/SandR-logo.png" alt="s and r Logo" />
         </a>
 
         <nav className="nav">

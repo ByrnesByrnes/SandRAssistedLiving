@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-// import { AiFillInstagram } from 'react-icons/ai'
 import { BsEnvelopeFill } from 'react-icons/bs'
 import { NavLink as Link } from 'react-router-dom'
 import { headerLinks } from '../headerLinks'
@@ -12,7 +11,7 @@ export default function Footer() {
   return (
     <section className="footer">
       <div className="footer__logo">
-        <img src="/imgs/SandRAssistedLiving_logo.png" alt="" />
+        <img src="/imgs/SandRAssistedLiving_logo.png" alt="s and r logo" />
       </div>
       <div className="footer__socials">
         {/* <a href="#" target="_blank" className="footer__link">
@@ -24,6 +23,8 @@ export default function Footer() {
           <BsEnvelopeFill 
           onClick={() => setShowModal(!showModal)}
           className="footer__social" 
+          aria-label="email"
+          role="button"
         />
           <Modal content={<ContactForm setShowModal={setShowModal} />} showModal={showModal} setShowModal={setShowModal} />
         </div>
