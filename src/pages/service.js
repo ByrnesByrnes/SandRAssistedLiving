@@ -2,7 +2,6 @@ import React from 'react';
 import { useParams } from 'react-router-dom'
 import { services } from '../servicesData'
 import { parseToUrl } from '../helpers/parseToUrl'
-import * as ROUTES from "../constants/routes";
 import { Helmet } from 'react-helmet-async';
 
 export default function Service() {

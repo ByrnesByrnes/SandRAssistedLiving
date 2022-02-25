@@ -10,7 +10,7 @@ export default function Hero() {
       </div>
 
       <div className="hero__image">
-        {/* should be a Portrait */}
+
         <img src="/imgs/stock/raychan.jpg" alt="lady in wheelchair being walked by female lady"/>
       </div>
     </section>

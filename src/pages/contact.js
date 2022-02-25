@@ -50,7 +50,6 @@ export default function Contact() {
           </div>
         </div>
         <ContactForm />
-       
       </div>
     </section>
     </>
