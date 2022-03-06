@@ -32,7 +32,7 @@ export default function Service() {
 
         </div>
         <div className="service__details">
-          <h2 className="service__subtitle">Details</h2>
+          <h2 className="service__subtitle">Services</h2>
           <ul className="service__list">
             {service.list.map((item, i) => (
               <li key={i} className="service__list__option">{item}</li>

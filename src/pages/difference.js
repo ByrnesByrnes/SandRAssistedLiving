@@ -24,8 +24,7 @@ export default function Difference() {
           <img src="/imgs/stock/caregiver.jpg" alt="caregiver holder elderly person's hand" />
         </div>
 
-        <div className="difference__info">
-          <p className="difference__text">Your loved ones can rest assured that you will be receiving quality care in a loving and safe environment.</p>
+        <div className="difference__info">          
           <h2 className="difference__subtitle">How?</h2>
           <ul className="difference__list">
             <li className="difference__list__option">

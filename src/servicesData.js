@@ -12,16 +12,9 @@ export const services = [
     
     ],
       list: [
-      "Home Health Care",
-      "Hospice Care",
+      "Home Health Care",      
       "Respite Care",
-      "Incontinence management",
-      "Medication Monitoring",
-      "Daily Housekeeping",
-      "Emergency Response",
-      "Special Diets",
-      "Feeding Assistance",
-      "Personal Laundry services"
+      "Daycare"
     ]
   },
  
