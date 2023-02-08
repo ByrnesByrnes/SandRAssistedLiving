@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom'
 import { services } from '../servicesData'
 import { parseToUrl } from '../helpers/parseToUrl'
 import { Helmet } from 'react-helmet-async';
+import { VisitorPolicy } from '../components';
 
 export default function Service() {
 
@@ -42,7 +43,9 @@ export default function Service() {
         <div className="service__extras">
           <div>
             <h3>Visitors</h3>
-            <p className="about__text">Family members are allowed to have appointment free visiting anytime throughout the day.</p>
+            <p className="about__text">Family members are allowed to have appointment free visiting anytime throughout the day.
+              <VisitorPolicy />
+            </p>
           </div>
           <div>
             <h3>Activities</h3>

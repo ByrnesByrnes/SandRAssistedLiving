@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { BsEnvelopeFill } from 'react-icons/bs'
 import { NavLink as Link } from 'react-router-dom'
 import { headerLinks } from '../headerLinks'
-import { Modal, ContactForm } from '../components'
+import { Modal, ContactForm, VisitorPolicy } from '../components'
 
 export default function Footer() {
   const [showModal, setShowModal] = useState(false)
@@ -20,12 +20,12 @@ export default function Footer() {
         <div
           style={{ display: "inline-block" }}
         >
-          <BsEnvelopeFill 
-          onClick={() => setShowModal(!showModal)}
-          className="footer__social" 
-          aria-label="email"
-          role="button"
-        />
+          <BsEnvelopeFill
+            onClick={() => setShowModal(!showModal)}
+            className="footer__social"
+            aria-label="email"
+            role="button"
+          />
           <Modal content={<ContactForm setShowModal={setShowModal} />} showModal={showModal} setShowModal={setShowModal} />
         </div>
 
@@ -38,6 +38,7 @@ export default function Footer() {
           to={item.to} className="footer__link">{item.title}</Link>
       ))}
       <a href="tel:+8135487289" className="footer__link">(813) 548-7289</a>
+      <VisitorPolicy />
       <p className="footer__license">S&R Assisted Living Facility License No: AL13236.</p>
     </section>
   )
